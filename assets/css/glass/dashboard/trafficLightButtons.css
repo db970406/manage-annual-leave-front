@@ -1,0 +1,38 @@
+
+#traffic_light_buttons_box{
+    display:flex;
+    align-items:center;
+    gap:var(--interval-gap-md);
+}
+
+#traffic_light_buttons_box button{
+    border-radius:10px;
+    width:20px; 
+    height:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:0.2s;
+    padding:var(--interval-padding-sm);
+}
+
+#traffic_light_buttons_box button i{
+    display:none;
+    color:var(--color-accent-red);
+}
+#traffic_light_buttons_box button:hover{
+    transform:scale(1.1);
+}
+#traffic_light_buttons_box button:hover i{
+    display:block;
+}
+
+#exit_button{
+    background-color:var(--color-red);
+}
+#sync_button{
+    background-color:var(--color-yellow);
+}
+#add_button{
+    background-color:var(--color-green);
+}
