@@ -1,0 +1,24 @@
+
+#employee_screen{
+    display:flex;
+    flex-direction:column;
+    gap:var(--interval-gap-lg);
+    width:80%;
+    height:100%;
+}
+#employee_top_screen{
+    border-radius:10px;
+    display:flex;
+    gap:var(--interval-gap-xl);
+    width:100%;
+}
+
+#employee_bottom_screen{
+    display:flex;
+    flex-direction:column;
+    box-shadow:var(--box-shadow);
+    border-radius:10px;
+    width:100%;
+    height:100%;
+    overflow-y:hidden;
+}
