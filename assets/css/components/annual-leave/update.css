@@ -1,0 +1,16 @@
+#back_to_create_annual_leave_button{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    width:20px; 
+    height:20px;
+    background-color:var(--color-yellow-pale);
+    transition:0.2s;
+}
+#back_to_create_annual_leave_button:hover{
+    background-color:var(--color-yellow);
+}
+#back_to_create_annual_leave_button:hover i{
+    color:var(--color-accent-red);
+}
