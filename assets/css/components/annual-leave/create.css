@@ -1,0 +1,62 @@
+@import "./utils.css";
+
+#create_annual_leave{
+    display:flex;
+    flex-direction:column;
+    box-shadow:var(--box-shadow);
+    border-radius:10px;
+    width:55%;
+    height:100%;
+}
+#create_annual_leave_header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:var(--interval-padding-lg);
+    border-bottom:1px solid var(--color-border-light);
+    width:100%;
+}
+
+#create_annual_leave_section{
+    width:100%;
+    height:100%;
+    padding:var(--interval-padding-2xl);
+}
+#create_annual_leave_form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:100%;
+    gap:var(--interval-gap-lg);
+}
+
+#create_annual_leave_form div{
+    display:flex;
+    gap:var(--interval-gap-md);
+}
+
+#create_annual_leave_name_box{
+    
+}
+
+#create_annual_leave_date_box{
+    display:flex;
+    align-items:center;
+    gap:var(--interval-gap-lg);
+}
+
+#create_annual_leave_date_box input[type="date"]{
+    padding:var(--interval-padding-md);
+    width:40%;
+    border:1px solid var(--color-border-light);
+    border-radius:10px;
+    box-shadow:var(--box-shadow);
+}
+
+#annual_leave_controll_box{
+    width:100%;
+    margin-top:auto;
+    display:flex;
+    gap:10px;
+}
+
