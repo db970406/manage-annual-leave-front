@@ -1,0 +1,111 @@
+
+#all_employees_bar{
+    width:170px;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    box-shadow:var(--box-shadow);
+    border-radius:10px;
+}
+
+#all_employees_header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:var(--interval-padding-lg);
+    border-bottom:1px solid var(--color-border-light);
+}
+#all_employees_header_name{
+    text-align:center;
+}
+#search_mode_button{
+    background-color:var(--color-yellow-pale);
+    border-radius:10px;
+    width:20px;
+    height:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:0.2s;
+}
+#search_mode_button:hover {
+    background-color:var(--color-yellow);
+    color:var(--color-accent-red);
+}
+
+#all_employees_section{
+    padding:var(--interval-padding-lg);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:var(--interval-gap-md);
+    overflow-y:scroll;
+}
+
+#employees_name{
+    font-size:var(--size-font-md);
+    cursor:pointer;
+    transition:0.2s;
+}
+#employees_name:hover{
+    color:var(--color-accent-blue);
+}
+
+#employee_detail_screen{
+    display:flex;
+    flex-direction:column;
+    border-radius:10px;
+    box-shadow:var(--box-shadow);
+    width:40%;
+    height:100%;
+}
+
+#employee_detail_header{
+    display:flex;
+    justify-content:space-between;
+    padding:var(--interval-padding-lg);
+    border-bottom:1px solid var(--color-border-light);
+    width:100%;
+}
+
+#selected_employee{
+    font-size:var(--size-font-lg);
+}
+
+#employee_detail_section{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:var(--interval-gap-md);
+    padding:var(--interval-padding-lg);
+    height:100%;
+}
+
+#employee_detail_name{
+    font-size:var(--size-font-xl);
+}
+#employee_detail_position{
+    font-size:var(--size-font-lg);
+}
+#employee_detail_email{
+    font-size:var(--size-font-md);
+}
+#employee_detail_phone_number{
+    font-size:var(--size-font-md);
+}
+#employee_detail_join_date{
+    font-size:var(--size-font-md);
+}
+#employee_detail_department{
+    font-size:var(--size-font-md);
+}
+
+#employee_detail_annual_leave.many{
+    color:var(--color-green);
+}
+#employee_detail_annual_leave.normal{
+    color:var(--color-yellow);
+}
+#employee_detail_annual_leave.few{
+    color:var(--color-red);
+}
