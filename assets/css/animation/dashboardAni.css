@@ -1,0 +1,24 @@
+#glass_dashboard.slide-in-left{
+    animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 0.2s;
+}
+#glass_dashboard.slide-out-left{
+    animation: slide-out-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-110vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slide-out-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-110vw);
+        display:none;
+    }
+}
