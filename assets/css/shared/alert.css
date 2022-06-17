@@ -1,0 +1,40 @@
+#warning_screen{
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:rgba(0,0,0,0.4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+    height:100vh;
+    z-index:3;
+}
+
+#warning_box{
+    display:flex;
+    gap:var(--interval-gap-lg);
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:var(--interval-padding-2xl);
+    animation:scale-up 0.2s ease-in-out both;
+}
+@keyframes scale-up{
+    from{
+        transform:scale(0.7);
+    }
+    to{
+        transform:scale(1);
+    }
+}
+
+#warning_text{
+    color:var(--color-white);
+}
+
+#warning_buttons_box{
+    display:flex;
+    gap:var(--interval-gap-md);
+    width:100%;
+}
