@@ -1,0 +1,21 @@
+input[type="date"]{
+    pointer-events:none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    z-index: 1;
+    cursor: pointer;
+    pointer-events:auto;
+}
+input[type="date"]{
+    color:var(--color-accent-blue);
+}
+input[type="date"]::before {
+    content:attr(placeholder);
+    width:100%;
+    color:var(--color-accent-blue);
+}
+input[type="date"]:focus:before,
+input[type="date"]:valid:before{
+    display: none;
+}
+
