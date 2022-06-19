@@ -1,0 +1,37 @@
+#glass_categories.slide-up {
+	animation: slide-up 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#glass_categories.slide-down{
+    animation: slide-down 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 0.3s;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-40vh);
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-40vh);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+#glass_categories.slide-up #glass_category{
+    height:45px;
+}
+#glass_categories.slide-up #glass_category p{
+    display:none;
+}
+#glass_categories.slide-down #glass_category{
+    transition-delay:0.3s;
+    height:400px;
+}
+#glass_categories.slide-down #glass_category p{
+    display:block;
+}
