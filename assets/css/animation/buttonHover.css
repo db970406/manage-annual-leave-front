@@ -1,0 +1,29 @@
+
+.ani_button{
+    padding:var(--interval-padding-md);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.7s;
+    background-size: 200% auto;
+    box-shadow: 0 0 3px rgba(255,255,255,0.4);
+    border-radius: 10px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:var(--color-text-light);
+}
+.ani_button:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+.black_button{
+    background-image: linear-gradient(to right, #141E30 0%, #243B55  51%, #141E30  100%);
+}
+.green_button {
+    background-image: linear-gradient(-225deg, #8ec5fc 0%, #B19FFF 48%, #e0c3fc 100%);
+}
+.red_button{
+    background-image: linear-gradient(to right, #c30000 0%, #ff0027  51%, #ff5a52  100%);
+}
