@@ -1,0 +1,68 @@
+
+#weekly_annual_leave_bar{
+    width:200px;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    box-shadow:var(--box-shadow);
+    border-radius:10px;
+}
+#weekly_annual_leave_header{
+    padding:var(--interval-padding-lg);
+    border-bottom:1px solid var(--color-border-light);
+}
+#weekly_annual_leave_header_name{
+    text-align:center;
+}
+#weekly_annual_leave_section{
+    padding:var(--interval-padding-lg);
+    display:flex;
+    flex-direction:column;
+    gap:var(--interval-gap-lg);
+    overflow-y:scroll;
+}
+
+#weekly_annual_leave{
+    display:flex;
+    flex-direction:column;
+    gap:var( --interval-gap-md);
+}
+#weekly_annual_leave_start_date{
+    font-size:var(--size-font-md);
+}
+#weekly_annual_leave_finish_date{
+    font-size:var(--size-font-sm);
+    transition:0.2s;
+    cursor:pointer;
+}
+#weekly_annual_leave_finish_date:hover{
+    color:var(--color-accent-blue);
+}
+
+#history_annual_leave_header{
+    display:flex;
+    padding:var(--interval-padding-lg);
+    justify-content:space-between;
+    border-bottom:1px solid var(--color-border-light);
+}
+
+#history_annual_leave_section{
+    display:flex;
+    flex-direction:column;
+    padding:var(--interval-padding-lg);
+    gap:var(--interval-gap-md);
+    height:100%;
+    overflow-y:scroll;
+}
+
+#history_annual_leave{
+    display:flex;
+    justify-content:space-between;
+    gap:var(--interval-gap-md);
+    cursor:pointer;
+    transition:0.2s;
+}
+
+#history_annual_leave:not(.expired):hover {
+    color:var(--color-accent-blue);
+}
