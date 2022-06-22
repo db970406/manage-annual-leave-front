@@ -1,0 +1,36 @@
+
+#weather_row_box{
+    position:absolute;
+    top:0;
+    right:0;
+    padding:10px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:var(--interval-gap-md);
+    border-radius:0;
+    border-bottom-left-radius:10px;
+}
+#weather_row_box i {
+    font-size:var(--size-font-xl);
+}
+#weather_column_box{
+    display:flex;
+    flex-direction:column;
+    jsutify-content:center;
+    align-items:center;
+    gap:var(--interval-gap-sm);
+}
+#weather_city{
+
+}
+#weather_temp{
+
+}
+
+#realtime_box{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:var(--interval-gap-sm);
+}
