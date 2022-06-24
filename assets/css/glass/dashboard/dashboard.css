@@ -1,0 +1,108 @@
+@import "../../components/annual-leave/create.css";
+@import "../../components/annual-leave/read.css";
+@import "../../components/annual-leave/update.css";
+@import "../../components/annual-leave/utils.css";
+@import "../../components/employee/create.css";
+@import "../../components/employee/read.css";
+@import "../../components/employee/update.css";
+@import "../../components/employee/search.css";
+@import "../../components/employee/utils.css";
+@import "../../layout/employeeScreen.css";
+@import "../../shared/checkbox.css";
+@import "../../animation/dashboardAni.css";
+@import "../../animation/buttonHover.css";
+@import "../../shared/disabled.css";
+@import "./trafficLightButtons.css";
+@import "./notion.css";
+@import "./changeBg.css";
+@import "../../components/employee/search.css";
+
+.glass{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    border-radius: 12px;
+}
+
+.dark .glass{
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(3px);
+    box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    border-radius: 12px;
+}
+
+#glass_dashboard{
+    display:flex;
+    gap:var(--interval-gap-2xl);
+    transform: translateX(-110vw);
+    transition:0.2s;
+    box-shadow:1px 1px 4px var(--color-white-pale);
+    width:60%;
+    height:70%;
+}
+#pannel_employee{
+    width:100%;
+}
+#controll_header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:var(--interval-padding-md) var(--interval-padding-lg);
+    border-bottom:1px solid var(--color-border-light);
+    height:10%;
+}
+
+#dashboard_main{
+    display:flex;
+    padding:var(--interval-padding-3xl);
+    gap:var(--interval-gap-3xl);
+    width:100%;
+    height:90%;
+}
+
+#pannel_weekly_annual_leave{
+    width:200px;
+}
+
+#drop_space{
+    position:absolute;
+    bottom:30%;
+    left:50%;
+    width:150px;
+    height:150px;
+    padding:var(--interval-padding-3xl);
+    display:none;
+    place-self:center;
+    transition:0.2s;
+    background-color:var(--color-red-pale);
+    border-radius:50%;
+}
+#drop_space i {
+    color:var(--color-text-light);
+    font-size:var(--size-font-ultra);
+    transition:0.2s;
+}
+#drop_space.in{
+    animation:inside 0.3s ease both;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#drop_space.hovered{
+    background-color:var(--color-red);
+}
+#drop_space.hovered i {
+    transform:scale(1.2);
+}
+
+@keyframes inside {
+    from{
+        transform:scale(0.2);
+    }
+    to{
+        transform:scale(1);
+    }
+}
+
+
+

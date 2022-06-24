@@ -1,7 +1,7 @@
 import { weeklyAnnualLeaveComponent, getWeeklyAnnualLeaveData } from '../../components/annual-leave/read.js';
 import { allEmployeesBarComponent, getEmployeesData } from '../../components/employee/read.js';
 import { employeeScreenComponent } from '../../layout/employeeScreen.js';
-import { trafficLightButtonsComponent } from './trafficRightButtons.js';
+import { trafficLightButtonsComponent } from './trafficLightButtons.js';
 import { makeElementTag } from '../../shared/makeHtmlTag.js';
 import { controllMessage } from '../../shared/webSocket.js';
 import { darkModeComponent } from '../../shared/darkMode.js';
