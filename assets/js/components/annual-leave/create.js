@@ -1,6 +1,6 @@
 import { makeCategoryTag, makeElementTag, makeInputTag } from '../../shared/makeHtmlTag.js';
 import { timworxUrl } from '../../shared/requestUrl.js';
-import { alarm } from '../../shared/warnings.js';
+import { alarm } from '../../shared/alert.js';
 import { checkMultipleOfPointFive } from '../employee/utils.js';
 import { addFinishDateInArticle, addStartDateCategory, checkMatchedDuration, getDateFormat, makeNewWeeklyAnnualLeave, setWeeklyAnnualLeaveObj } from './utils.js';
 import { carculateAnnualLeave, colorChangeByLeftAnnualLeave, countAnnualLeaveHowLong, initializeCreateAnnualLeaveForm, makeNewAnnualLeaveHistory } from './utils.js';
