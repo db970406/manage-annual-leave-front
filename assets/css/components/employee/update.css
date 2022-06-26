@@ -1,0 +1,81 @@
+
+#employee_update_traffic_light_buttons_box{
+    display:flex;
+    gap:var(--interval-gap-md);
+}
+#employee_update_mode_button{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:20px; 
+    height:20px;
+    border-radius:50%;
+    background-color:var(--color-yellow);
+}
+
+#employee_update_mode_button:disabled i{
+    display:none;
+}
+
+#employee_update_mode_button:hover i{
+    display:block;
+    color:var(--color-accent-red);
+}
+
+#employee_detail_section *{
+    text-align:right;
+    color:var(--color-white);
+    outline:none;
+    width:100%;
+}
+
+#employee_detail_section *.invalid{
+    border-bottom:1px solid var(--color-red);
+}
+#employee_detail_section select{
+    background:none;
+    border:none;
+}
+#employee_detail_section select option{
+    color:black;
+}
+
+#employee_update_traffic_light_buttons_box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:var(--interval-gap-md);
+}
+#employee_update_traffic_light_buttons_box button{
+    border-radius:10px;
+    width:20px; 
+    height:20px;
+    transition:0.2s;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#employee_update_traffic_light_buttons_box i {
+    color:var(--color-accent-red);
+}
+#exit_employee_update_mode{
+    background-color:var(--color-yellow-pale);
+}
+#exit_employee_update_mode:hover{
+    background-color:var(--color-yellow);
+}
+
+#employee_update_button{
+    background-color:var(--color-green-pale);
+}
+#employee_update_button:hover{
+    background-color:var(--color-green);
+}
+
+#employee_delete_button{
+    background-color:var(--color-red-pale);
+}
+#employee_delete_button:hover{
+    background-color:var(--color-red);
+}
+
