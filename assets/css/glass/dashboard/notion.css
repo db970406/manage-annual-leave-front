@@ -1,0 +1,33 @@
+
+#notion_div{
+    position:absolute;
+    top:40%;
+    left:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    cursor:pointer;
+    z-index:999;
+}
+
+#notion_div .fa-exclamation{
+    z-index:1;
+    font-size:150px;
+}
+#notion_div .fa-bell{
+    animation:bibration 0.2s linear infinite both;
+    color:var(--color-accent-blue);
+    font-size:700px;
+    position:absolute;
+}
+
+@keyframes bibration{
+    from{
+        transform:rotate(-50deg);
+    }
+    to{
+        transform:rotate(50deg);
+    }
+}
