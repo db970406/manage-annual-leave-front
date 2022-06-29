@@ -1,0 +1,39 @@
+#dark_mode_controller{
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+}
+#dark_mode_controller_button{
+    border-radius:50%;
+    background:var(--color-bg-light);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:var(--interval-padding-xl);
+    transition:0.2s;
+    width:30px;
+    height:30px;
+    position:absolute;
+    transform:translateX(45px);
+}
+#dark_mode_controller_slider{
+    width:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:pink;
+    border-radius:20px;
+    padding:var(--interval-padding-md);
+}
+
+#dark_mode_controller_button .fa-moon{
+    color:var(--color-text-dark);
+}
+#dark_mode_controller_button .fa-sun{
+    color:var(--color-text-light);
+}
+
+.dark #dark_mode_controller_button{
+    transform:translateX(3px);
+    background:var(--color-bg-dark);
+}
