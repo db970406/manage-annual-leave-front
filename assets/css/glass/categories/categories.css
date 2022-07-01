@@ -1,0 +1,32 @@
+@import "../../animation/categoriesAni.css";
+
+#glass_categories{
+    display:flex;
+    position:absolute;
+    gap:var(--interval-gap-lg);
+}
+
+#glass_category{
+    color: rgba(255, 255, 255, 0.45);
+    width:300px;
+    height:400px;
+    transition:0.3s;
+    cursor:pointer;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#glass_category:hover {
+    transition-delay:0;
+    transform:scale(1.05);
+}
+
+#glass_category p{
+    font-size:var(--size-font-lg);
+}
+
+#glass_category i{
+    font-size:var(--size-font-xl);
+}
