@@ -1,0 +1,73 @@
+#transparent_bg{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:2;
+    background:rgba(0,0,0,0.6);
+}
+
+#create_employee_form{
+    padding:var(--interval-padding-3xl);
+    width:400px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:var(--interval-gap-lg);
+    animation: slide-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in {
+    from{
+        transform:translateY(-400px);
+    }
+    to{
+        transform:translateY(0);
+    }
+}
+#create_employee_form input,
+#create_employee_form select
+{
+    width:100%;
+    outline:none;
+    border:none;
+    font-size:var(--size-font-md);
+    padding:var(--interval-padding-md);
+    box-shadow:10px 10px 36px rgba(0,0,0,0.2);
+    border-radius:10px;
+    color:var(--color-text-light);
+}
+
+#create_employee_form select option{
+    color:var(--color-text-dark);
+}
+#create_employee_form input::placeholder{
+    color:var(--color-text-light);
+}
+
+#create_employee_form.invalid{
+    border-bottom:1px solid var(--color-red);
+}
+
+#employee_input_name{
+
+}
+#employee_select_position{
+    background:none;
+}
+#employee_input_email{
+
+}
+#employee_input_phone_number{
+
+}
+#employee_input_join_date{
+
+}
+#employee_select_department{
+    background:none;
+}
