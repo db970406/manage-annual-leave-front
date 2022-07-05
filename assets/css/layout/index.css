@@ -1,0 +1,30 @@
+@import "./layout.css";
+@import "../utils/reset.css";
+@import "../utils/cssVariables.css";
+
+*{
+    box-sizing:border-box;
+}
+body{ 
+    -ms-overflow-style: none; 
+} 
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+button, input{
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+button:disabled{
+    opacity:0.3;
+    cursor:default;
+}
+
+input::placeholder{
+    color:var(--color-text-dark-pale);
+}
+.dark input::placeholder{
+    color:var(--color-text-light-pale);
+}
