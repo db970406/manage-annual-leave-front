@@ -1,0 +1,29 @@
+
+#half_leave_checkbox {  
+    appearance: none; 
+    background: #fff; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    height: 14px; 
+    outline: 0; 
+    width: 14px; 
+} 
+#half_leave_checkbox::after { 
+    border: solid #fff; 
+    border-width: 0 2px 2px 0; 
+    content: ''; 
+    display: none; 
+    height: 40%; 
+    left: 40%; 
+    position: relative;
+    top: 20%; 
+    transform: rotate(45deg); 
+    width: 15%; 
+} 
+#half_leave_checkbox:checked { 
+    background: #505bf0; 
+} 
+#half_leave_checkbox:checked::after { 
+    display: block; 
+}
+
