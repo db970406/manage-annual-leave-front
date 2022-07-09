@@ -1,0 +1,10 @@
+#star_field .disabled{
+    color:var(--color-text-white-pale);
+    pointer-events : none;
+    opacity:0.3;
+}
+#normal_field .disabled{
+    color:var(--color-text-black-pale);
+    pointer-events : none;
+    opacity:0.3;
+}
