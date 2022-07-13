@@ -1,0 +1,5 @@
+
+#invalid_text{
+    color:var(--color-red);
+    font-size:var(--size-font-xs);
+}
