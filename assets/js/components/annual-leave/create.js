@@ -50,20 +50,28 @@ export const createAnnualLeave = async () => {
         const startDate = new Date(startDateInput.value);
         const nowDate = new Date();
 
-        const { annualLeaveData } = await data.json();
+        const {
+            annualLeaveData: {
+                start_date,
+                annual_leave_id,
+                employee_id,
+                finish_date,
+                how_long
+            }
+        } = await data.json();
 
         const getMilliSecGap = startDate.setDate(startDate.getDate()) - nowDate.setDate(nowDate.getDate());
         const getDateGap = new Date(getMilliSecGap).getDate();
 
         // 오늘로부터 7일 내의 연차라면 주간 연차리스트에 추가한다.
         if (getDateGap <= 7) {
-            addStartDateCategory(annualLeaveData.start_date);
+            addStartDateCategory(start_date);
             addFinishDateInArticle({
-                annualLeaveId: annualLeaveData.annual_leave_id,
-                employeeId: annualLeaveData.employee_id,
-                startDate: annualLeaveData.start_date,
-                finishDate: annualLeaveData.finish_date,
-                howLong: annualLeaveData.how_long,
+                annualLeaveId: annual_leave_id,
+                employeeId: employee_id,
+                startDate: start_date,
+                finishDate: finish_date,
+                howLong: how_long,
                 employeeName: vacationer.textContent.split(" ")[0]
             });
         };
