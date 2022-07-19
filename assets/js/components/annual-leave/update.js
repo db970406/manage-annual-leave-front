@@ -1,6 +1,6 @@
 import { checkHalfLeave, clearDemical } from '../../shared/utils.js';
 import { makeElementTag, makeIconTag } from '../../shared/makeHtmlTag.js';
-import { alarm, warning } from '../../shared/warnings.js';
+import { alarm, warning } from '../../shared/alert.js';
 import { colorChangeByLeftAnnualLeave, initializeCreateAnnualLeaveForm, makeNewAnnualLeaveHistory, removeAnnualLeaveInHistory, removeWeeklyAnnualLeave, carculateAnnualLeave, findAnnualLeaveHowLongInHistory, checkMatchedDuration, addFinishDateInArticle, addStartDateCategory } from './utils.js';
 import { checkMultipleOfPointFive } from '../employee/utils.js';
 import { timworxUrl } from '../../shared/requestUrl.js';

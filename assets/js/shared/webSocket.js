@@ -1,6 +1,6 @@
 import { makeElementTag, makeIconTag, makeInputTag } from './makeHtmlTag.js';
 import { timworxUrl, wsTimworxUrl } from './requestUrl.js';
-import { alarm } from './warnings.js';
+import { alarm } from './alert.js';
 const HR_MANAGER_ID = 891274;
 const webSocket = new WebSocket(wsTimworxUrl);
 

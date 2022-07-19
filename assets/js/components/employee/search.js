@@ -1,5 +1,5 @@
-import { showEmployeeDetailBySearch } from '../../shared/insertData.js';
 import { makeElementTag, makeIconTag, makeInputTag } from '../../shared/makeHtmlTag.js';
+import { showEmployeeDetailBySearch } from './utils.js';
 
 export const searchEmployeeComponent = () => {
     const searchEmployeeBox = makeElementTag({
